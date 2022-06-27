@@ -10,15 +10,15 @@ async function main(req, res, next) {
     host: 'smtp.gmail.com',
     port:465,
   auth: {
-    user: 'kis196han@gmail.com',
+    user: 'kis***@gmail.com',
     pass: '**'
   }
   });
 
   // send mail with defined transport object
   var mailOptions = {
-    from: 'kis196han@gmail.com',
-    to: 'ajay9554876816@gmail.com',
+    from: 'kis****@gmail.com',
+    to: 'ajay955****6@gmail.com',
     subject: 'Sending Email using Node.js',
     text: 'That was easy!'
   };
