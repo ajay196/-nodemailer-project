@@ -19,8 +19,8 @@ async function writeTxtFile(){
 
 async function duplexStream(){
     try{
-        const readStream = createReadStream('../dummy.mp4')
-        const writeStream = createWriteStream('../copy_dummys.mp4')
+        const readStream = createReadStream('./dummy.mp4')
+        const writeStream = createWriteStream('./copy_dummys.mp4')
         const report  = new PassThrough()
         let total = 0
         report.on('data',(chunk) => {
@@ -32,7 +32,6 @@ async function duplexStream(){
         console.log(err);
     }
 }
-duplexStream()
-// module.exports = {streamData, writeTxtFile}
+module.exports = {streamData, writeTxtFile}
 
 

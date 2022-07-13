@@ -1,2 +1,5 @@
 ###
 GET  http://localhost:3000/users/email
+
+###
+GET  http://localhost:3000/users/stream
